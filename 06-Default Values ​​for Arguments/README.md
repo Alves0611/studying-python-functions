@@ -1,0 +1,1 @@
+* criar uma função que padronize códigos de produtos. O default será padronizar os códigos para letras minúsculas (dado por 'm'), mas se o usuário quiser pode padronizar para maiúscula, dado por ('M').

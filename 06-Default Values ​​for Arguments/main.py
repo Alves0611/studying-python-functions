@@ -1,15 +1,14 @@
-def padronizar_codigos(lista_codigos, padrao='m'):
-    for i, item in enumerate(lista_codigos):
-      item = item.replace('  ', ' ')
-      item = item.strip()
-      if padrao == 'm':
-        item = item.casefold()
-      elif padrao == 'M':
-        item = item.upper()
-      lista_codigos[i] = item
-    return lista_codigos
+def standardize_codes(code_list, standard='m'):
+    for i, item in enumerate(code_list):
+        item = item.replace('  ', ' ')
+        item = item.strip()
+        if standard == 'm':
+            item = item.casefold()
+        elif standard == 'M':
+            item = item.upper()
+        code_list[i] = item
+    return code_list
 
 
-codigo_produtos = [' ABC12 ', 'abc34', 'AbC37']
-print(padronizar_codigos(codigo_produtos, padrao = 'm'))
-
+product_codes = [' ABC12 ', 'abc34', 'AbC37']
+print(standardize_codes(product_codes, standard='m'))
